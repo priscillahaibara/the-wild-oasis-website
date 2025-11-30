@@ -15,8 +15,8 @@ import Header from "./_components/Header";
 
 export const metadata = {
   title: {
-    template: "%s The Wild Oasis",
-    default: "Welcome / The Wild Oasis",
+    template: "The Wild Oasis / %s",
+    default: "The Wild Oasis",
   },
   description:
     "Luxurious cabin hotel, located in the heart of the Italian Dolomites, surrounded by beautiful mountains and dark forests",
@@ -30,8 +30,8 @@ export default function RootLayout({ children }) {
       >
         <Header />
 
-        <div className="flex-1 px-8 py-12">
-          <main className="max-w-7xl mx-auto">{children}</main>
+        <div className="flex-1 px-8 py-12 grid">
+          <main className="max-w-7xl mx-auto w-full">{children}</main>
         </div>
       </body>
     </html>
